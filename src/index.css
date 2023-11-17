@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --primry__text__color: hsl(192, 100%, 9%);
+  --secondary__text__color: hsl(207, 100%, 98%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.primary__button {
+  padding: 0.5rem 0.75rem;
+  color: hsl(322, 100%, 66%);
+  background: transparent;
+  border: 3px solid hsl(322, 100%, 66%);
+  border-radius: 3rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.primary__button:hover {
+  color: hsl(321, 100%, 78%);
+}
+
+.main__button {
+  padding: 1rem 1.25rem;
+  color: #fff;
+  background: hsl(322, 100%, 66%);
+  border: 3px solid hsl(322, 100%, 66%);
+  border-radius: 3rem;
+  text-transform: capitalize;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.main__button:hover {
+  color: hsl(321, 100%, 78%);
+}
+
+h1 {
+  color: var(--primry__text__color);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+ p { 
+  color: var(--primry__text__color);
+  font-weight: 600;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1.25rem;
+ }
+
+ .stats__message {
+  color: hsl(210, 7%, 28%);
+  font-weight: 400;
+ }
+
+.submit__button {
+  background-color: hsl(322, 100%, 66%);
+  border: 2px solid hsl(322, 100%, 66%);
+  padding: 0.5rem;
+  border-radius: 12px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+input {
+  height: 2rem;
+  border-radius: 5px;
+}
+
+
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+input:invalid[focused="true"] ~ h3 {
+  display: block;
+}
